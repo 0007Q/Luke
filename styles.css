@@ -504,4 +504,119 @@ footer {
     .review-card {
         padding: 1.5rem;
     }
+}
+
+/* Service Detail Page Styles */
+.service-detail-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(27, 30, 60, 0.9), rgba(27, 30, 60, 0.9)),
+                url('gas-engineering-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.service-detail {
+    padding: 5rem 2rem;
+}
+
+.service-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.service-intro h2 {
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.service-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.service-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.feature {
+    text-align: center;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.service-cta {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem;
+    background: linear-gradient(rgba(27, 30, 60, 0.02), rgba(27, 30, 60, 0.05));
+    border-radius: 15px;
+}
+
+.service-cta h2 {
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.service-cta p {
+    margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .service-detail-hero {
+        height: 40vh;
+    }
+
+    .service-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .service-detail {
+        padding: 3rem 1rem;
+    }
+}
+
+.service-link {
+    color: var(--navy);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-link:hover {
+    color: var(--light-purple);
 } 
