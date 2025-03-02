@@ -22,7 +22,8 @@ body {
 
 /* Update navigation */
 nav {
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     background: var(--navy);
     padding: 1.5rem 2rem;
@@ -75,6 +76,7 @@ nav {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    margin-top: 0;
 }
 
 .hero-slider {
@@ -516,7 +518,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 0;
 }
 
 .service-detail {
